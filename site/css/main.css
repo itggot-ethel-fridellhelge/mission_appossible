@@ -1,0 +1,312 @@
+@font-face {
+  font-family: 'distant_galaxy';
+  src: url('../fonts/sf_distant_galaxy.ttf') format('truetype');
+}
+
+body{
+  margin: 0;
+  font-family: helvetica;
+  color: white;
+}
+
+.content{
+  min-height: 100vh;
+  margin: 0;
+  background-image: url(../img/space.png);
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-attachment: fixed;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  width: 100%;
+  margin-bottom: 2vh;
+}
+
+nav{
+  background-color: #0D1114;
+}
+
+.articlebox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+article{
+  background-color: rgba(57,60,62,0.8);
+  width: 100%;
+  margin-bottom: 2vh;
+  border-bottom: 3px solid #223344;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page{
+  background-color: rgba(57,60,62,0.8);
+  margin-bottom: 2vh;
+}
+
+.pagenumber{
+  height: 30px;
+  width: 30px;
+}
+
+footer{
+  width: 100%;
+  background-color: #0D1114;
+  border-top: 3px solid #223344;
+  color: #919294;
+  font-size: 10pt;
+  text-align: center;
+}
+
+a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-family: helvetica;
+  color: white;
+  text-decoration: none;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+li{
+  width: 100%;
+}
+
+h1{
+  font-family: distant_galaxy;
+  width: 96%;
+  font-size: 5vw;
+  margin: 2%;
+  color: #5E9DBC;
+  text-align: center;
+}
+
+h2{
+  margin: 2%;
+  width: 96%;
+}
+
+p{
+  margin: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.navigation{
+  display: none;
+}
+
+/*-------------------PHONE-------------------*/
+@media screen and (min-device-width: 320px) and (max-device-width: 667px) {
+  .navigation{
+    display: flex;
+    background-color: #0D1114;
+    justify-content: center;
+  }
+
+  .nav_mobile{
+    flex-direction: column;
+  }
+
+  .articlebox{
+    width: 90%;
+  }
+
+  article{
+    text-align: left;
+  }
+
+  main{
+    min-width: 0;
+    width: 100%;
+    align-items: center;
+  }
+
+  .hidden_mobile{
+    display: none;
+  }
+
+  h4{
+    margin: 3%;
+  }
+
+  h1{
+    font-size: 15vw;
+  }
+
+  footer, article{
+    border-width: 5px;
+  }
+
+  .kekkit_dust_pancakes{
+    background-image: url(../img/kekkit_dust_pancakes_mobile.jpg);
+    width: 288px;
+    height: 203px;
+  }
+
+}
+
+/*-------------TABLET LANDSCAPE-------------*/
+@media screen and (min-device-width: 320px) and (max-device-width: 1366px) and (orientation: landscape) {
+  content{
+    background: none;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  main{
+    width: 100vw;
+    flex-wrap: wrap;
+    height: 100vh;
+    min-width: 0;
+  }
+
+  .nav_mobile{
+    flex-direction: column;
+  }
+
+  .articlebox{
+    background-image: url(../img/space.png);
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+    order: 4;
+    width: 70vw;
+    min-height: 100vh;
+    position: relative;
+  }
+
+  header{
+    background-color: #0D1114;
+    width: 30vw;
+    margin: 0;
+    height: calc(90vh - 3px);
+  }
+
+  footer{
+    height: 10vh;
+    order: 3;
+    width: 30vw;
+    margin: 0;
+  }
+
+  article{
+    width: 94%;
+    margin: 3%;
+    margin-bottom: 0;
+  }
+
+  .page{
+    margin: 1%;
+  }
+
+  h4{
+    margin-left: 7%;
+  }
+
+  h5{
+    margin: 3%;
+    margin-left: 15%;
+  }
+
+  nav a{
+    justify-content: flex-start;
+  }
+
+  .dropdown{
+    flex-direction: column;
+  }
+
+  .current{
+    background-color: #232629;
+  }
+
+  .kekkit_dust_pancakes{
+    background-image: url(../img/kekkit_dust_pancakes_tablet.jpg);
+    width: 673px;
+    height: 474px;
+  }
+
+}
+
+/*-----------------DESKTOP-----------------*/
+@media screen and (min-device-width: 1367px){
+  nav{
+    height: 40px;
+  }
+
+  main{
+    width: 50%;
+    min-width: 700px;
+  }
+
+    .current{
+      background-color: #232629;
+    }
+
+    ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      height: 100%;
+    }
+
+  li{
+    width: 100%;
+  }
+
+  h4{
+    margin: 0;
+  }
+
+  h5{
+    margin: 2%;
+  }
+
+  .dropdown{
+    flex-direction: column;
+    background-color: #393C3E;
+    height: auto;
+    position: relative;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  .kekkit_dust_pancakes{
+    background-image: url(../img/kekkit_dust_pancakes_desktop.jpg);
+    width: 700px;
+    height: 493px;
+  }
+}

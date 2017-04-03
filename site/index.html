@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang = en>
+
+<head>
+  <title>Home | PN-C4K3's</title>
+  <meta charset="utf-8">
+  <link href="./css/main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./js/main.js"></script>
+</head>
+
+<body>
+  <div class="content">
+    <main>
+
+      <header>
+        <div class="logo">
+          <a href="./index.html"><h1>PN-C4K3's</h1></a>
+        </div>
+        <div class="navigation" onclick="nav()">
+          <h4>Navigation</h4>
+        </div>
+        <nav class="hidden_mobile">
+          <ul class="nav_mobile">
+            <li onmouseover="reveal()" onmouseout="hide()"><a href="./index.html" class="current"><h4>Blog</h4></a>
+            <ul class="dropdown hidden hidden_mobile" id="blog_dropdown">
+              <li onmouseover="makecurrent(this)" onmouseout="removecurrent(this)"><a href="./index.html"><h5>Page 1</h5></a></li>
+              <li onmouseover="makecurrent(this)" onmouseout="removecurrent(this)"><a href="./index.html"><h5>Page 2</h5></a></li>
+              <li onmouseover="makecurrent(this)" onmouseout="removecurrent(this)"><a href="./index.html"><h5>Page 3</h5></a></li>
+            </ul></li>
+            <li onmouseover="makecurrent(this)" onmouseout="removecurrent(this)"><a href="./index.html"><h4>Top 5 Pancakes</h4></a></li>
+            <li onmouseover="makecurrent(this)" onmouseout="removecurrent(this)"><a href="./index.html"><h4>About</h4></a></li>
+            <li onmouseover="makecurrent(this)" onmouseout="removecurrent(this)"><a href="./index.html"><h4>Contact</h4></a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="articlebox">
+        <article>
+          <h2>VUR FIN RUBRIK</h2>
+          <section class="image kekkit_dust_pancakes">
+          </section>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia ultrices libero, at iaculis urna consectetur eleifend. Aenean accumsan venenatis turpis, eget tempor purus viverra eget. Nullam sed ex sit amet metus lobortis egestas sit amet id nunc. Nulla nunc ipsum, fringilla quis tempor sit amet, iaculis ac magna. Donec bibendum nisl purus. Fusce id condimentum lectus, dignissim posuere risus. Phasellus egestas pharetra accumsan. Pellentesque orci libero, pulvinar sit amet ultricies id, gravida ut massa. Pellentesque nec justo nisi. Duis consectetur ut purus in finibus. Mauris suscipit sapien nec mollis aliquam. Morbi imperdiet ex pellentesque mi consequat aliquet. Maecenas vel porta velit. Cras ut vehicula est. Cras maximus aliquam dui et porta. Etiam auctor viverra lectus, ac varius justo condimentum eget.</p>
+        </article>
+        <article>
+          <h2>JÄTTEFIN RUBRIK</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia ultrices libero, at iaculis urna consectetur eleifend. Aenean accumsan venenatis turpis, eget tempor purus viverra eget. Nullam sed ex sit amet metus lobortis egestas sit amet id nunc. Nulla nunc ipsum, fringilla quis tempor sit amet, iaculis ac magna. Donec bibendum nisl purus. Fusce id condimentum lectus, dignissim posuere risus. Phasellus egestas pharetra accumsan. Pellentesque orci libero, pulvinar sit amet ultricies id, gravida ut massa. Pellentesque nec justo nisi. Duis consectetur ut purus in finibus. Mauris suscipit sapien nec mollis aliquam. Morbi imperdiet ex pellentesque mi consequat aliquet.</p>
+        </article>
+        <div class="page">
+          <ul>
+            <li class="pagenumber" onmouseover="makecurrent(this)" onmouseout="removecurrent(this)"><a href="./index.html"><h4>1</h4></a></li>
+            <li class="pagenumber" onmouseover="makecurrent(this)" onmouseout="removecurrent(this)"><a href="./index.html"><h4>2</h4></a></li>
+            <li class="pagenumber" onmouseover="makecurrent(this)" onmouseout="removecurrent(this)"><a href="./index.html"><h4>3</h4></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <footer>
+        <p>Holosite created by PN-C4K3 using HyperTogruta Markup Language, CSS and Jawascript. Hosted by some cheap, shady holoblogdomain.</p>
+        <p>©RymdLull i Väst</p>
+      </footer>
+
+    </main>
+  </div>
+</body>
+
+</html>
